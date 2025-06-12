@@ -1,0 +1,26 @@
+<div *ngIf="loading">Cargando justificaciones...</div>
+
+<table *ngIf="!loading && justifications.length > 0" class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Usuario</th>
+      <th>Fecha</th>
+      <th>Motivo</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let just of justifications">
+      <td>{{ just.id }}</td>
+      <td>{{ just.userId }}</td>
+      <td>{{ just.date }}</td>
+      <td>{{ just.reason }}</td>
+      <td>{{ just.status }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="!loading && justifications.length === 0">
+  No hay justificaciones para mostrar.
+</div>

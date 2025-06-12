@@ -1,0 +1,15 @@
+<h2>Iniciar sesión</h2>
+<form (ngSubmit)="login()">
+  <div>
+    <label>Usuario:</label>
+    <input [(ngModel)]="username" name="username" required />
+  </div>
+  <div>
+    <label>Contraseña:</label>
+    <input [(ngModel)]="password" name="password" type="password" required />
+  </div>
+  <button type="submit">Entrar</button>
+  <p *ngIf="error" style="color: red;">{{ error }}</p>
+ 
+</form>
+

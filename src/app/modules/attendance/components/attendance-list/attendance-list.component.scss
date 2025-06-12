@@ -1,0 +1,63 @@
+.attendance-list-container {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+
+    thead {
+      background-color: #007bff;
+      color: white;
+
+      th {
+        padding: 0.75rem;
+        text-align: left;
+        font-weight: 600;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: #f1f1f1;
+        }
+
+        &:hover {
+          background-color: #e9f0ff;
+        }
+
+        td {
+          padding: 0.75rem;
+          border-top: 1px solid #ddd;
+        }
+      }
+    }
+  }
+
+  .status {
+    &.present {
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    &.absent {
+      color: #dc3545;
+      font-weight: bold;
+    }
+
+    &.late {
+      color: #ffc107;
+      font-weight: bold;
+    }
+  }
+}
