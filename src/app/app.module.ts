@@ -9,7 +9,12 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
+
 import { LoginComponent } from './pages/login/login.component';
+
+
+
+
 
 @NgModule({
   declarations: [
